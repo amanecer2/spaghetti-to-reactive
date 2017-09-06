@@ -38,9 +38,9 @@ const box2 = new Box({dom: $('.counter')[1],pubSub});
 const box3 = new Box({dom: $('.counter')[2],pubSub});
 
 $('.increment').on('click', () => {
-    pubSub.publish('increment',1);
+    pubSub.publish('increment');
 })
 
 $('.decrement').on('click', () => {
-    pubSub.publish('decrement',1);
+    pubSub.publish('decrement');
 })
