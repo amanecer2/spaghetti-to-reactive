@@ -6,7 +6,6 @@ function PubSub(){
     function publish(eventName, data) {
         if (!event[eventName]) {
             console.warn(`${eventName} does not have any registered listeners. Publish cancelled.`);
-            return false;
         }
 
         return event[eventName].next(data);//rxjs 5
