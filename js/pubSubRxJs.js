@@ -15,15 +15,14 @@ function PubSub(){
 
     function subscribe(event, cb) {
         if (!cb) {
-            console.warn('No callback provided for subscription. Subscription cancelled.');
-            return false;
+            console.warn('No callback provided for subscription. You must implement subscribe for yourself.');
         }
 
         if (!sinks[event]) {
             sinks[event] = new Rx.Subject();
         }
 
-        return sinks[event].subscribe(cb);
+        return cb ?  sinks[event].subscribe(cb) : sinks[event];
     }
 
     function destroy() {
