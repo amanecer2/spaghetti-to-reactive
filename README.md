@@ -6,6 +6,8 @@ from spaghetti code to reactive and organized code
 
 ### jquery is used only to make an easier dom manipulate
 
+> [presentation](https://docs.google.com/a/restartit.co.il/presentation/d/1t_L3LbAR-deuzoJHx6EVP67BXIQJ-dN9e_XvNsbXcsM/edit?usp=sharing) for this code
+
 * From
 ``` 
 let x = 0;
